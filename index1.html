@@ -5,12 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="description" content="Portfolio of Gopi Kumar Choudhary, a Computer Science undergraduate at NIT Sikkim focused on Java, Spring Boot, full-stack development, DSA, and AI.">
 <meta name="theme-color" content="#03040c">
-<meta name="author" content="Gopi Kumar Choudhary">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Gopi Kumar Choudhary | Backend &amp; Full-Stack Developer">
-<meta property="og:description" content="NIT Sikkim CSE undergraduate building backend services and full-stack products. Explore projects, technical skills, and contact details.">
-<meta property="og:image" content="gopi-profile.jpg">
-<title>Gopi Kumar Choudhary | Backend &amp; Full-Stack Developer</title>
+<title>Gopi Kumar Choudhary | Java &amp; Full-Stack Developer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
@@ -27,8 +22,6 @@
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{background:var(--bg);color:var(--text);font-family:"Space Grotesk",sans-serif;overflow-x:hidden;cursor:none;}
-.skip-link{position:fixed;top:0.75rem;left:0.75rem;z-index:100000;padding:0.7rem 1rem;background:var(--c1);color:#03040c;border-radius:8px;font-weight:700;text-decoration:none;transform:translateY(-160%);transition:transform 0.2s;}
-.skip-link:focus{transform:translateY(0);}
 a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--c1);outline-offset:4px;}
 ::selection{background:rgba(56,189,248,0.25);color:var(--text);}
 ::-webkit-scrollbar{width:3px;}
@@ -103,14 +96,6 @@ nav.solid{background:rgba(3,4,12,0.85);backdrop-filter:blur(24px) saturate(180%)
 .mq-track{display:flex;gap:2.5rem;width:max-content;animation:scroll 34s linear infinite;will-change:transform;}
 .mq-item{white-space:nowrap;font-family:"Fira Code",monospace;font-size:0.76rem;color:var(--muted);display:flex;align-items:center;gap:0.6rem;}
 .mq-item span{color:var(--c1);font-size:0.6rem;}
-
-/* RECRUITER SNAPSHOT */
-.proof-strip{background:var(--bg1);border-bottom:1px solid var(--border);padding:2rem 3rem;}
-.proof-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;}
-.proof-item{display:flex;gap:0.9rem;align-items:flex-start;padding:1rem 1.1rem;background:var(--surf);border:1px solid var(--border);border-radius:14px;}
-.proof-icon{color:var(--c1);font-size:1rem;padding-top:0.1rem;}
-.proof-title{font-weight:700;font-size:0.9rem;margin-bottom:0.25rem;}
-.proof-copy{color:var(--muted);font-size:0.78rem;line-height:1.55;}
 
 /* ─── SECTION BASE ─── */
 .sec{padding:7rem 3rem;content-visibility:auto;contain-intrinsic-size:900px;}
@@ -233,11 +218,6 @@ nav.solid{background:rgba(3,4,12,0.85);backdrop-filter:blur(24px) saturate(180%)
 .pc-title .arrow{color:var(--muted);font-size:0.9rem;transition:all 0.3s;}
 .pc:hover .arrow{color:var(--c1);transform:translate(3px,-3px);}
 .pc-desc{color:var(--muted);font-size:0.88rem;line-height:1.7;flex:1;margin-bottom:1.3rem;}
-.pc-evidence{list-style:none;display:grid;gap:0.55rem;margin:0 0 1.3rem;}
-.pc-evidence li{position:relative;padding-left:1.1rem;color:#a7b2c6;font-size:0.8rem;line-height:1.55;}
-.pc-evidence li::before{content:"+";position:absolute;left:0;color:var(--c3);font-family:"Fira Code",monospace;font-weight:700;}
-.source-link{display:inline-flex;align-items:center;gap:0.45rem;color:var(--c1);font-size:0.78rem;font-weight:600;text-decoration:none;white-space:nowrap;}
-.source-link:hover{text-decoration:underline;}
 .pc-tags{display:flex;flex-wrap:wrap;gap:0.4rem;margin-bottom:1.2rem;}
 .pct{padding:0.2rem 0.6rem;border-radius:5px;font-size:0.7rem;font-weight:600;font-family:"Fira Code",monospace;background:rgba(129,140,248,0.1);color:var(--c2);border:1px solid rgba(129,140,248,0.2);}
 .pc-footer{display:flex;align-items:center;justify-content:space-between;padding-top:1rem;border-top:1px solid var(--border);}
@@ -345,8 +325,6 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:1.8rem 3r
   nav{padding:1rem 1.5rem;}
   .sec{padding:5rem 1.5rem;}
   #hero{padding:5rem 1.5rem 3rem;}
-  .proof-strip{padding:1.5rem;}
-  .proof-grid{grid-template-columns:1fr;}
 }
 @media(max-width:600px){
   .learn-grid,.info-grid,.srow{grid-template-columns:1fr;}
@@ -356,7 +334,6 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:1.8rem 3r
 </style>
 </head>
 <body>
-<a class="skip-link" href="#main-content">Skip to main content</a>
 
 <!-- PRELOADER -->
 <div id="preloader">
@@ -374,52 +351,49 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:1.8rem 3r
 <div id="prog"></div>
 
 <!-- BACK TO TOP -->
-<a href="#hero" class="back" id="backBtn" aria-label="Back to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></a>
+<a href="#hero" class="back" id="backBtn"><i class="fas fa-arrow-up"></i></a>
 
 <!-- ── NAV ── -->
-<nav id="nav" aria-label="Primary navigation">
+<nav id="nav">
   <a href="#hero" class="logo">
     <div class="logo-mark">GC</div>
     Gopi Kumar Choudhary
   </a>
   <ul class="nav-center" id="navLinks">
-    <li><a href="#projects">Projects</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#dsa">DSA</a></li>
-    <li><a href="#journey">Education</a></li>
+    <li><a href="#projects">Work</a></li>
+    <li><a href="#journey">Journey</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <div class="nav-right">
-    <a href="https://github.com/gopigkc1910-commits" target="_blank" class="nav-icon" aria-label="GitHub profile"><i class="fab fa-github" aria-hidden="true"></i></a>
-    <a href="https://www.linkedin.com/in/gopi19choudhary/" target="_blank" class="nav-icon" aria-label="LinkedIn profile"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-    <a href="resume.html" class="nav-btn" aria-label="View resume">Resume</a>
-    <a href="mailto:gopigkc1910@gmail.com" class="nav-btn" style="margin-left:0.6rem;" aria-label="Email Gopi">Email Me</a>
+    <a href="https://github.com/gopigkc1910-commits" target="_blank" class="nav-icon"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/gopi19choudhary/" target="_blank" class="nav-icon"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:gopigkc1910@gmail.com" class="nav-btn">Let's Connect</a>
     <button class="hamburger" id="hburg" onclick="toggleNav()" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
 <!-- ── HERO ── -->
-<main id="main-content">
-<section id="hero" aria-labelledby="hero-title">
-  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
   <div class="hero-inner">
     <div>
       <div class="hero-tag"><div class="tag-pulse"></div>NIT Sikkim &nbsp;&#183;&nbsp; B.Tech CSE &nbsp;&#183;&nbsp; Batch '29</div>
-      <h1 class="hero-name" id="hero-title">Gopi Kumar<br/><span class="ghost">Choudhary</span></h1>
+      <h1 class="hero-name">Gopi Kumar<br/><span class="ghost">Choudhary</span></h1>
       <div class="hero-sub">
-        <span>Backend &amp; Full-Stack Developer &mdash;</span>
+        <span>I am &mdash;</span>
         <span class="tw" id="tw"></span>
         <span style="display:inline-block;width:2px;height:1em;background:var(--c2);vertical-align:middle;animation:blink 1s infinite;"></span>
       </div>
-      <p class="hero-p">Computer Science undergraduate at <strong>National Institute of Technology Sikkim</strong>. I build backend services and full-stack products across Java, Spring Boot, Next.js, FastAPI, SQL, and REST APIs. Open to internships and early-career backend/full-stack roles — resume available to download.</p>
+      <p class="hero-p">Computer Science undergraduate at <strong>National Institute of Technology Sikkim</strong>, focused on Java, Spring Boot, full-stack development, DSA, and scalable software systems.</p>
       <div class="hero-actions">
         <a href="#projects" class="btn-primary">See My Work</a>
-        <a href="https://github.com/gopigkc1910-commits" target="_blank" class="btn-ghost">View GitHub &rarr;</a>
-        <a href="resume.html" class="btn-ghost" aria-label="View resume">View Resume</a>
+        <a href="#contact" class="btn-ghost">Get In Touch &rarr;</a>
       </div>
       <div class="hero-metrics">
-        <div class="hm"><div class="hm-n">3</div><div class="hm-l">PROJECTS</div></div>
+        <div class="hm"><div class="hm-n">150+</div><div class="hm-l">LEETCODE</div></div>
         <div class="hero-divider"></div>
         <div class="hm"><div class="hm-n">8.23</div><div class="hm-l">CGPA</div></div>
         <div class="hero-divider"></div>
@@ -466,15 +440,6 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:1.8rem 3r
     <div class="mq-item"><span>&#9670;</span>Java</div><div class="mq-item"><span>&#9670;</span>Spring Boot</div><div class="mq-item"><span>&#9670;</span>REST APIs</div><div class="mq-item"><span>&#9670;</span>Microservices</div><div class="mq-item"><span>&#9670;</span>React.js</div><div class="mq-item"><span>&#9670;</span>Next.js</div><div class="mq-item"><span>&#9670;</span>JavaScript</div><div class="mq-item"><span>&#9670;</span>PostgreSQL</div><div class="mq-item"><span>&#9670;</span>MySQL</div><div class="mq-item"><span>&#9670;</span>Git &amp; GitHub</div><div class="mq-item"><span>&#9670;</span>Firebase</div><div class="mq-item"><span>&#9670;</span>DSA</div><div class="mq-item"><span>&#9670;</span>AI / ML</div><div class="mq-item"><span>&#9670;</span>LeetCode 150+</div>
   </div>
 </div>
-
-<section class="proof-strip" aria-label="Recruiter snapshot">
-  <div class="proof-grid">
-    <div class="proof-item"><i class="fas fa-briefcase proof-icon" aria-hidden="true"></i><div><div class="proof-title">Seeking software internships</div><div class="proof-copy">Available for backend and full-stack engineering opportunities where I can contribute and learn with a team.</div></div></div>
-    <div class="proof-item"><i class="fas fa-code proof-icon" aria-hidden="true"></i><div><div class="proof-title">Evidence through projects</div><div class="proof-copy">Three public repositories spanning a full-stack platform, React product work, and interactive frontend development.</div></div></div>
-    <div class="proof-item"><i class="fas fa-graduation-cap proof-icon" aria-hidden="true"></i><div><div class="proof-title">NIT Sikkim, CSE 2029</div><div class="proof-copy">8.23 CGPA. Focused on software fundamentals, system design basics, and reliable backend engineering.</div></div></div>
-    <div class="proof-item"><i class="fas fa-file-alt proof-icon" aria-hidden="true"></i><div><div class="proof-title">Resume & Interview Ready</div><div class="proof-copy">Resume available for download; happy to schedule a quick call or interview. Preferred contact: LinkedIn or email.</div></div></div>
-  </div>
-</section>
 
 <!-- ── ABOUT ── -->
 <section id="about" class="sec">
@@ -623,42 +588,26 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:1.8rem 3r
           </div>
         </div>
         <div class="pc-title">Intern Tracker <span class="arrow"><i class="fas fa-arrow-up-right"></i></span></div>
-        <p class="pc-desc">A full-stack platform that brings internships, hackathons, coding contests, scholarships, and tech events into one searchable product.</p>
-        <ul class="pc-evidence">
-          <li>Designed a monorepo architecture with a Next.js frontend, FastAPI backend, and PostgreSQL persistence to simplify cross-team development and releases.</li>
-          <li>Implemented OTP-based authentication and Redis caching — reduced average API latency by approximately <strong>28%</strong> and improved session response times.</li>
-          <li>Added Docker workflows and GitHub Actions CI to automate tests and deployments, cutting manual release steps and decreasing deployment time by approximately <strong>60%</strong>.</li>
-          <li>Demonstrates end-to-end product ownership across UI, API, data, and delivery tooling; repo contains README and CI for easy evaluation.</li>
-        </ul>
+        <p class="pc-desc">A production-grade full-stack student opportunity platform for discovering internships, hackathons, coding contests, scholarships, and tech events &mdash; all in one place. Built as a monorepo with Next.js 15 frontend, FastAPI backend, PostgreSQL database, Redis caching, OTP-based authentication, and CI/CD automation via GitHub Actions.</p>
         <div class="pc-tags"><span class="pct">TypeScript</span><span class="pct">Next.js 15</span><span class="pct">FastAPI</span><span class="pct">PostgreSQL</span><span class="pct">Redis</span><span class="pct">Docker</span><span class="pct">GitHub Actions</span><span class="pct">OTP Auth</span></div>
         <div class="pc-footer">
           <div class="pc-stack">Full-stack &bull; Backend + Frontend &bull; DevOps</div>
-          <a href="https://github.com/gopigkc1910-commits/Intern-tracker" target="_blank" class="source-link"><i class="fab fa-github" aria-hidden="true"></i> View source</a>
+          <a href="https://github.com/gopigkc1910-commits/Intern-tracker" target="_blank" class="pc-link"><i class="fab fa-github"></i></a>
         </div>
       </div>
       <div class="pc r" onmousemove="mouseGlow(event,this)">
         <div class="pc-header"><div class="pc-num">02</div><div class="pc-links"><a href="https://github.com/gopigkc1910-commits/EduPath" target="_blank" class="pc-link"><i class="fab fa-github"></i></a></div></div>
         <div class="pc-title">EduPath <span class="arrow"><i class="fas fa-arrow-up-right"></i></span></div>
-        <p class="pc-desc">An education application that helps students discover and follow structured, curated learning paths.</p>
-        <ul class="pc-evidence">
-          <li>Built reusable React components and a responsive interface around a clear student workflow, enabling faster feature delivery.</li>
-          <li>Component-driven approach reduced UI implementation time for new features by approximately <strong>40%</strong>, improving developer velocity.</li>
-          <li>Demonstrates frontend architecture, component design, and product-focused UX decisions; includes accessibility and responsive testing notes in the repo.</li>
-        </ul>
+        <p class="pc-desc">A smart education application that helps students discover and follow structured, curated learning paths. Built with component-based React architecture for a smooth and intuitive UX.</p>
         <div class="pc-tags"><span class="pct">JavaScript</span><span class="pct">React</span><span class="pct">EdTech</span><span class="pct">Component Design</span></div>
-        <div class="pc-footer"><div class="pc-stack">Frontend &bull; React</div><a href="https://github.com/gopigkc1910-commits/EduPath" target="_blank" class="source-link"><i class="fab fa-github" aria-hidden="true"></i> View source</a></div>
+        <div class="pc-footer"><div class="pc-stack">Frontend &bull; React</div><a href="https://github.com/gopigkc1910-commits/EduPath" target="_blank" class="pc-link"><i class="fab fa-github"></i></a></div>
       </div>
       <div class="pc r" onmousemove="mouseGlow(event,this)">
         <div class="pc-header"><div class="pc-num">03</div><div class="pc-links"><a href="https://github.com/gopigkc1910-commits/HoliHub" target="_blank" class="pc-link"><i class="fab fa-github"></i></a></div></div>
         <div class="pc-title">HoliHub <span class="arrow"><i class="fas fa-arrow-up-right"></i></span></div>
-        <p class="pc-desc">An interactive web experience for creating and sharing Holi festival wishes.</p>
-        <ul class="pc-evidence">
-          <li>Created custom CSS motion and JavaScript interactions without a frontend framework, keeping bundle size minimal and improving load times.</li>
-          <li>Optimised assets and scripts to reduce initial render time by approximately <strong>35%</strong> (~600ms), ensuring smooth animations on mobile devices.</li>
-          <li>Demonstrates visual polish, responsive implementation, and browser-based interaction design; includes progressive enhancement for lower-end devices.</li>
-        </ul>
+        <p class="pc-desc">An interactive, animated web experience for sending Holi festival wishes. A creative project demonstrating smooth CSS animations, interactive JS, and playful UI design patterns.</p>
         <div class="pc-tags"><span class="pct">HTML5</span><span class="pct">CSS3</span><span class="pct">JavaScript</span><span class="pct">Animation</span></div>
-        <div class="pc-footer"><div class="pc-stack">Frontend &bull; Creative</div><a href="https://github.com/gopigkc1910-commits/HoliHub" target="_blank" class="source-link"><i class="fab fa-github" aria-hidden="true"></i> View source</a></div>
+        <div class="pc-footer"><div class="pc-stack">Frontend &bull; Creative</div><a href="https://github.com/gopigkc1910-commits/HoliHub" target="_blank" class="pc-link"><i class="fab fa-github"></i></a></div>
       </div>
       <div class="pc r" style="border-style:dashed;background:transparent;" onmousemove="mouseGlow(event,this)">
         <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;min-height:220px;gap:0.9rem;text-align:center;padding:2rem;">
@@ -729,7 +678,6 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:1.8rem 3r
       <div class="cl r">
         <h3>Got an internship<br/>or project for me?</h3>
         <p>I'm interested in internship opportunities where I can contribute, learn quickly, and grow alongside a strong engineering team. Drop a message!</p>
-        <p style="color:var(--muted);font-size:0.9rem;margin-top:0.4rem;">Preferred contact: LinkedIn or email. Available for interviews and short technical screens — resume attached above.</p>
         <div class="socials">
           <a href="https://github.com/gopigkc1910-commits" target="_blank" class="social-row"><div class="social-ico"><i class="fab fa-github"></i></div><div><div class="social-name">GitHub</div><div class="social-handle">gopigkc1910-commits</div></div><i class="fas fa-arrow-right social-arrow"></i></a>
           <a href="https://www.linkedin.com/in/gopi19choudhary/" target="_blank" class="social-row"><div class="social-ico" style="color:#0a66c2;"><i class="fab fa-linkedin"></i></div><div><div class="social-name">LinkedIn</div><div class="social-handle">gopi19choudhary</div></div><i class="fas fa-arrow-right social-arrow"></i></a>
@@ -755,14 +703,13 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:1.8rem 3r
 </section>
 
 <!-- ── FOOTER ── -->
-</main>
 <footer>
   <div class="fl">Built by <a href="#hero">Gopi Kumar Choudhary</a> &middot; NIT Sikkim &middot; B.Tech CSE '29</div>
   <div class="ficons">
-    <a href="https://github.com/gopigkc1910-commits" target="_blank" class="fic" aria-label="GitHub profile"><i class="fab fa-github" aria-hidden="true"></i></a>
-    <a href="https://www.linkedin.com/in/gopi19choudhary/" target="_blank" class="fic" aria-label="LinkedIn profile"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-    <a href="mailto:gopigkc1910@gmail.com" class="fic" aria-label="Email Gopi"><i class="fas fa-envelope" aria-hidden="true"></i></a>
-    <a href="https://leetcode.com/u/zrXli8EVDO/" target="_blank" class="fic" aria-label="LeetCode profile"><i class="fas fa-code" aria-hidden="true"></i></a>
+    <a href="https://github.com/gopigkc1910-commits" target="_blank" class="fic"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/gopi19choudhary/" target="_blank" class="fic"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:gopigkc1910@gmail.com" class="fic"><i class="fas fa-envelope"></i></a>
+    <a href="https://leetcode.com/u/zrXli8EVDO/" target="_blank" class="fic"><i class="fas fa-code"></i></a>
   </div>
 </footer>
 
@@ -816,9 +763,6 @@ document.querySelectorAll("#navLinks a").forEach(link=>link.addEventListener("cl
   document.getElementById("hburg").setAttribute("aria-expanded","false");
 }));
 document.querySelectorAll('a[target="_blank"]').forEach(link=>link.rel="noopener noreferrer");
-document.querySelectorAll(".pc-link").forEach(link=>{
-  if(!link.hasAttribute("aria-label"))link.setAttribute("aria-label","View project source on GitHub");
-});
 
 /* ── HERO CANVAS ── */
 const cv=document.getElementById("hero-canvas"),ctx=cv.getContext("2d");
